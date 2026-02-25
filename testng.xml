@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="InsurEdge Suite">
+
+    <!-- Run all classes in the packages first -->
+    <test name="All View Policy Tests">
+        <packages>
+            <package name="org.tests.ViewPolicyTests"/>
+        </packages>
+    </test>
+
+    <test name="All Modify Policy Tests">
+        <packages>
+            <package name="org.tests.ModifyPolicyTests"/>
+        </packages>
+    </test>
+
+    <!-- Then run individual person's classes -->
+<!--    <test name="Jay’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US02_MainCategoryUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US08_TableHeaderUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US19_PolicyNameFunctionality"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US20_PolicyStatusFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US38_PaginationBarUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US40_UpdateActionUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US53_ScrollToTopFunctionality"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Tagore’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US01_ViewPolicyBreadcrumUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US07_ResetUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US15_ScrollToTopUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US16_ViewPolicyBreadcrumFunctionality"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US27_ScrollToTopFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US34_ResetUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US35_TableHeaderUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US41_DeleteActionUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US50_SearchFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US51_ResetFunctionality"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Kavin’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US04_PolicyNameUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US10_TableDataUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US13_ExportToPDFUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US18_SubCategoryFunctionality"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US25_ExportToPDFFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US30_SubCategoryUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US57_DeleteAction_Confirmation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Bhavani’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US05_PolicyStatusUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US24_ExportToExcelFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US43_ReadOnlyFieldsUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US48_PolicyNameFunctionality"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Indrajeet’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US06_SearchUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US09_EmptyTableUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US14_ExportToCSVUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US21_SearchButtonFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US29_MainCategoryUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US32_PolicyStatusUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US37_TableDataUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US39_ScrollToTopUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US56_CancelFunctionality"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Binoy’s User Stories">-->
+<!--        <classes>-->
+<!--            <class name="org.tests.ViewPolicyTests.US03_SubCategoryUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US12_ExportToExcelUI"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US17_MainCategoryFunctionality"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US22_ResetButtonFunctionality"/>-->
+<!--            <class name="org.tests.ViewPolicyTests.US26_ExportToCSVFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US31_PolicyNameUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US33_SearchUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US36_EmptyTableUI"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality"/>-->
+<!--            <class name="org.tests.ModifyPolicyTests.US52_PaginationFunctionality"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
+
+

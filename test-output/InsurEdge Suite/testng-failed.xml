@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [InsurEdge Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Binoy’s User Stories(failed)">
+    <classes>
+      <class name="org.tests.ModifyPolicyTests.US36_EmptyTableUI">
+        <methods>
+          <include name="setUp"/>
+          <include name="navigateToModifyPolicy"/>
+          <include name="tearDown"/>
+          <include name="emptyStateValidation"/>
+        </methods>
+      </class> <!-- org.tests.ModifyPolicyTests.US36_EmptyTableUI -->
+      <class name="org.tests.ViewPolicyTests.US12_ExportToExcelUI">
+        <methods>
+          <include name="setUp"/>
+          <include name="exportToExcelEnabled"/>
+          <include name="tearDown"/>
+          <include name="navigateToViewPolicy"/>
+        </methods>
+      </class> <!-- org.tests.ViewPolicyTests.US12_ExportToExcelUI -->
+      <class name="org.tests.ModifyPolicyTests.US52_PaginationFunctionality">
+        <methods>
+          <include name="ellipsisValidation"/>
+          <include name="additionalPagesValidation"/>
+          <include name="setUp"/>
+          <include name="navigateToModifyPolicy"/>
+          <include name="pageCountValidation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.tests.ModifyPolicyTests.US52_PaginationFunctionality -->
+    </classes>
+  </test> <!-- Binoy’s User Stories(failed) -->
+</suite> <!-- Failed suite [InsurEdge Suite] -->

@@ -1,0 +1,625 @@
+<html>
+<head>
+<title>TestNG:  All Modify Policy Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Modify Policy Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>66/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 25 14:13:14 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>143 seconds (143071 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US52_PaginationFunctionality.pageCountValidation()'><b>pageCountValidation</b><br>Test class: org.tests.ModifyPolicyTests.US52_PaginationFunctionality</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f325719c0450bf46c61527597189c8d7, isElementEnabled {id=f.CAB4A26296E47E629A36CDE716AA87AC.d.E97A40A93E7227A187234694B431C628.e.9054}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\2461307\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54716}, goog:processID: 26564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54716/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f325719c0450bf46c61527597189c8d7)] -&gt; xpath: //select[@id=&apos;ContentPlaceHolder_Admin_ddlStatus&apos;]]
+Session ID: f325719c0450bf46c61527597189c8d7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:181)
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:408)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:172)
+	at org.tests.ModifyPolicyTests.US52_PaginationFunctionality.pageCountValidation(US52_PaginationFunctionality.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174735844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174735844'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f325719c0450bf46c61527597189c8d7, isElementEnabled {id=f.CAB4A26296E47E629A36CDE716AA87AC.d.E97A40A93E7227A187234694B431C628.e.9054}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\2461307\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54716}, goog:processID: 26564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54716/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f325719c0450bf46c61527597189c8d7)] -&gt; xpath: //select[@id=&apos;ContentPlaceHolder_Admin_ddlStatus&apos;]]
+Session ID: f325719c0450bf46c61527597189c8d7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:181)
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:408)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:172)
+	at org.tests.ModifyPolicyTests.US52_PaginationFunctionality.pageCountValidation(US52_PaginationFunctionality.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>2</td>
+<td>org.tests.ModifyPolicyTests.US52_PaginationFunctionality@2fd953a6</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US51_ResetFunctionality.verifyResetButtonFunctionality()'><b>verifyResetButtonFunctionality</b><br>Test class: org.tests.ModifyPolicyTests.US51_ResetFunctionality</td>
+<td><div><pre>java.lang.AssertionError: Policy Name did not reset correctly. expected [All] but found [AutoTest_1771471130608]
+	at org.tests.ModifyPolicyTests.US51_ResetFunctionality.checkDropdownText(US51_ResetFunctionality.java:101)
+	at org.tests.ModifyPolicyTests.US51_ResetFunctionality.verifyResetButtonFunctionality(US51_ResetFunctionality.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace98474301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace98474301'><pre>java.lang.AssertionError: Policy Name did not reset correctly. expected [All] but found [AutoTest_1771471130608]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.tests.ModifyPolicyTests.US51_ResetFunctionality.checkDropdownText(US51_ResetFunctionality.java:101)
+	at org.tests.ModifyPolicyTests.US51_ResetFunctionality.verifyResetButtonFunctionality(US51_ResetFunctionality.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>2</td>
+<td>org.tests.ModifyPolicyTests.US51_ResetFunctionality@3b7d3a38</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US50_SearchFunctionality.searchMessage()'><b>searchMessage</b><br>Test class: org.tests.ModifyPolicyTests.US50_SearchFunctionality</td>
+<td><div><pre>java.lang.AssertionError: No recors/data found message is not present when no data is returned
+	at org.tests.ModifyPolicyTests.US50_SearchFunctionality.searchMessage(US50_SearchFunctionality.java:149)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace279494572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace279494572'><pre>java.lang.AssertionError: No recors/data found message is not present when no data is returned
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.tests.ModifyPolicyTests.US50_SearchFunctionality.searchMessage(US50_SearchFunctionality.java:149)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>26</td>
+<td>org.tests.ModifyPolicyTests.US50_SearchFunctionality@492691d7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US36_EmptyTableUI.emptyStateValidation()'><b>emptyStateValidation</b><br>Test class: org.tests.ModifyPolicyTests.US36_EmptyTableUI</td>
+<td><div><pre>java.lang.AssertionError: No records found message is not displayed expected [true] but found [false]
+	at org.tests.ModifyPolicyTests.US36_EmptyTableUI.emptyStateValidation(US36_EmptyTableUI.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace202997574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace202997574'><pre>java.lang.AssertionError: No records found message is not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.tests.ModifyPolicyTests.US36_EmptyTableUI.emptyStateValidation(US36_EmptyTableUI.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>4</td>
+<td>org.tests.ModifyPolicyTests.US36_EmptyTableUI@28d18df5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US38_PaginationBarUI.verifyPaginationStartNumber()'><b>verifyPaginationStartNumber</b><br>Test class: org.tests.ModifyPolicyTests.US38_PaginationBarUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US38_PaginationBarUI@30bce90b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US34_ResetUI.resetEnabled()'><b>resetEnabled</b><br>Test class: org.tests.ModifyPolicyTests.US34_ResetUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US34_ResetUI@45ac5f9b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US52_PaginationFunctionality.paginationValidation()'><b>paginationValidation</b><br>Test class: org.tests.ModifyPolicyTests.US52_PaginationFunctionality</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US52_PaginationFunctionality@2fd953a6</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US52_PaginationFunctionality.additionalPagesValidation()'><b>additionalPagesValidation</b><br>Test class: org.tests.ModifyPolicyTests.US52_PaginationFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US52_PaginationFunctionality@2fd953a6</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US56_CancelFunctionality.validateCancelButtonAndRedirection()'><b>validateCancelButtonAndRedirection</b><br>Test class: org.tests.ModifyPolicyTests.US56_CancelFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US56_CancelFunctionality@539d019</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US32_PolicyStatusUI.validateDropdownSelection()'><b>validateDropdownSelection</b><br>Test class: org.tests.ModifyPolicyTests.US32_PolicyStatusUI<br>Test method: Step 3: Validate Option Count and Selection</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US32_PolicyStatusUI@55c53a33</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US37_TableDataUI.validateTableStructure()'><b>validateTableStructure</b><br>Test class: org.tests.ModifyPolicyTests.US37_TableDataUI<br>Test method: Task 1: Validate Table Presence and Column Count</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US37_TableDataUI@6304101a</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality.validateUpdateWindow()'><b>validateUpdateWindow</b><br>Test class: org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality<br>Test method: Task-1: Validate Update Action and New Window</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality@602e0143</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US30_SubCategoryUI.validateSubCategoryUI()'><b>validateSubCategoryUI</b><br>Test class: org.tests.ModifyPolicyTests.US30_SubCategoryUI</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US30_SubCategoryUI@4c012563</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US40_UpdateActionUI.updateActionUI()'><b>updateActionUI</b><br>Test class: org.tests.ModifyPolicyTests.US40_UpdateActionUI</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US40_UpdateActionUI@4278284b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US32_PolicyStatusUI.validateLabelDisplay()'><b>validateLabelDisplay</b><br>Test class: org.tests.ModifyPolicyTests.US32_PolicyStatusUI<br>Test method: Step 1: Validate Policy Status Label Display</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US32_PolicyStatusUI@55c53a33</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality.policyPageRedirect()'><b>policyPageRedirect</b><br>Test class: org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality@ae3540e</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US52_PaginationFunctionality.ellipsisValidation()'><b>ellipsisValidation</b><br>Test class: org.tests.ModifyPolicyTests.US52_PaginationFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US52_PaginationFunctionality@2fd953a6</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US35_TableHeaderUI.tableHeaders()'><b>tableHeaders</b><br>Test class: org.tests.ModifyPolicyTests.US35_TableHeaderUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US35_TableHeaderUI@6a47b187</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality.selectableOptionsValidation()'><b>selectableOptionsValidation</b><br>Test class: org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality@291f18</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality.oneSelectionValidation()'><b>oneSelectionValidation</b><br>Test class: org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality@1f53a5dc</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US38_PaginationBarUI.verifyEllipsisForLargePages()'><b>verifyEllipsisForLargePages</b><br>Test class: org.tests.ModifyPolicyTests.US38_PaginationBarUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US38_PaginationBarUI@30bce90b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality.visibilityValidation()'><b>visibilityValidation</b><br>Test class: org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality@1f53a5dc</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US29_MainCategoryUI.validateDropdownStatus()'><b>validateDropdownStatus</b><br>Test class: org.tests.ModifyPolicyTests.US29_MainCategoryUI<br>Test method: Task: Validate Dropdown clickability and default option</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US29_MainCategoryUI@3e44f2a5</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US39_ScrollToTopUI.validateScrollToTop()'><b>validateScrollToTop</b><br>Test class: org.tests.ModifyPolicyTests.US39_ScrollToTopUI<br>Test method: Validate Scroll to Top button UI and Functionality</td>
+<td></td>
+<td>6</td>
+<td>org.tests.ModifyPolicyTests.US39_ScrollToTopUI@7cbd9d24</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US43_ReadOnlyFieldsUI.testFields()'><b>testFields</b><br>Test class: org.tests.ModifyPolicyTests.US43_ReadOnlyFieldsUI</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US43_ReadOnlyFieldsUI@54eb2b70</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US56_CancelFunctionality.validateUpdateWindowSelection()'><b>validateUpdateWindowSelection</b><br>Test class: org.tests.ModifyPolicyTests.US56_CancelFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US56_CancelFunctionality@539d019</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US29_MainCategoryUI.validateDropdownSelection()'><b>validateDropdownSelection</b><br>Test class: org.tests.ModifyPolicyTests.US29_MainCategoryUI<br>Test method: Task: Validate Dropdown options and Selection</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US29_MainCategoryUI@3e44f2a5</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality.testSuccessMessageAfterSave()'><b>testSuccessMessageAfterSave</b><br>Test class: org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality@7331196b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality.testRedirectionToModifyPolicyPage()'><b>testRedirectionToModifyPolicyPage</b><br>Test class: org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality@7331196b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US37_TableDataUI.validateCellContent()'><b>validateCellContent</b><br>Test class: org.tests.ModifyPolicyTests.US37_TableDataUI<br>Test method: Task 2: Validate Cell Data and Action Buttons</td>
+<td></td>
+<td>2</td>
+<td>org.tests.ModifyPolicyTests.US37_TableDataUI@6304101a</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality.visibilityValidation()'><b>visibilityValidation</b><br>Test class: org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality@291f18</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US53_ScrollToTopFunctionality.verifyScrollToTopFunctionality()'><b>verifyScrollToTopFunctionality</b><br>Test class: org.tests.ModifyPolicyTests.US53_ScrollToTopFunctionality</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US53_ScrollToTopFunctionality@3899782c</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US38_PaginationBarUI.verifyPageNavigation()'><b>verifyPageNavigation</b><br>Test class: org.tests.ModifyPolicyTests.US38_PaginationBarUI</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US38_PaginationBarUI@30bce90b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US35_TableHeaderUI.tablePosition()'><b>tablePosition</b><br>Test class: org.tests.ModifyPolicyTests.US35_TableHeaderUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US35_TableHeaderUI@6a47b187</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US31_PolicyNameUI.labelValidation()'><b>labelValidation</b><br>Test class: org.tests.ModifyPolicyTests.US31_PolicyNameUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US31_PolicyNameUI@a37aefe</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US32_PolicyStatusUI.validateDropdownInitialState()'><b>validateDropdownInitialState</b><br>Test class: org.tests.ModifyPolicyTests.US32_PolicyStatusUI<br>Test method: Step 2: Validate Dropdown functionality and Default Value</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US32_PolicyStatusUI@55c53a33</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US41_DeleteActionUI.deleteActionPosition()'><b>deleteActionPosition</b><br>Test class: org.tests.ModifyPolicyTests.US41_DeleteActionUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US41_DeleteActionUI@3b8f0a79</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US35_TableHeaderUI.tableDisplayed()'><b>tableDisplayed</b><br>Test class: org.tests.ModifyPolicyTests.US35_TableHeaderUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US35_TableHeaderUI@6a47b187</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality.defaultValue()'><b>defaultValue</b><br>Test class: org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality@401f7633</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality.dropdownsOptions()'><b>dropdownsOptions</b><br>Test class: org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality@401f7633</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US38_PaginationBarUI.verifyPaginationBarVisibility()'><b>verifyPaginationBarVisibility</b><br>Test class: org.tests.ModifyPolicyTests.US38_PaginationBarUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US38_PaginationBarUI@30bce90b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality.oneSelectionValidation()'><b>oneSelectionValidation</b><br>Test class: org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US49_PolicyStatusFunctionality@401f7633</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US31_PolicyNameUI.dropdownValidation()'><b>dropdownValidation</b><br>Test class: org.tests.ModifyPolicyTests.US31_PolicyNameUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US31_PolicyNameUI@a37aefe</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality.verifyFieldData()'><b>verifyFieldData</b><br>Test class: org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality<br>Test method: Task-2 & 3: Verify Auto-populated Fields</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US54_UpdateActionFunctionality@602e0143</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US56_CancelFunctionality.verifyDataStability()'><b>verifyDataStability</b><br>Test class: org.tests.ModifyPolicyTests.US56_CancelFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US56_CancelFunctionality@539d019</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US33_SearchUI.labelValidation()'><b>labelValidation</b><br>Test class: org.tests.ModifyPolicyTests.US33_SearchUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US33_SearchUI@379614be</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality.testUpdatedValuesVisibleInMainTable()'><b>testUpdatedValuesVisibleInMainTable</b><br>Test class: org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality@7331196b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI.verifyPolicyBreadcrumbClickable()'><b>verifyPolicyBreadcrumbClickable</b><br>Test class: org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI@6f1c29b7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US48_PolicyNameFunctionality.selectableOptions()'><b>selectableOptions</b><br>Test class: org.tests.ModifyPolicyTests.US48_PolicyNameFunctionality</td>
+<td></td>
+<td>6</td>
+<td>org.tests.ModifyPolicyTests.US48_PolicyNameFunctionality@68df9280</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US29_MainCategoryUI.validateTitle()'><b>validateTitle</b><br>Test class: org.tests.ModifyPolicyTests.US29_MainCategoryUI<br>Test method: Task: Validate Main Category Title Display</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US29_MainCategoryUI@3e44f2a5</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI.validateFieldOrder()'><b>validateFieldOrder</b><br>Test class: org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI@301eda63</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality.testRejectNonNumericInput()'><b>testRejectNonNumericInput</b><br>Test class: org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US55_UpdateButtonFunctionality@7331196b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI.validateLabelsAboveFields()'><b>validateLabelsAboveFields</b><br>Test class: org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI@301eda63</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality.oneSelectionValidation()'><b>oneSelectionValidation</b><br>Test class: org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US46_MainCategoryFunctionality@291f18</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI.verifyBreadcrumbAppearsBelowTitle()'><b>verifyBreadcrumbAppearsBelowTitle</b><br>Test class: org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI@6f1c29b7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US34_ResetUI.resetButtonDropdownClear()'><b>resetButtonDropdownClear</b><br>Test class: org.tests.ModifyPolicyTests.US34_ResetUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US34_ResetUI@45ac5f9b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI.verifyPageTitleDisplayedTopLeft()'><b>verifyPageTitleDisplayedTopLeft</b><br>Test class: org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI@6f1c29b7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI.validateButtons()'><b>validateButtons</b><br>Test class: org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI@301eda63</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality.linkClickable()'><b>linkClickable</b><br>Test class: org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US45_ModifyPolicyBreadcrumFunctionality@ae3540e</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI.validateTitle()'><b>validateTitle</b><br>Test class: org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US42_UpdatePolicyFormUI@301eda63</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US34_ResetUI.resetButtonDisplay()'><b>resetButtonDisplay</b><br>Test class: org.tests.ModifyPolicyTests.US34_ResetUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US34_ResetUI@45ac5f9b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US33_SearchUI.searchEnable()'><b>searchEnable</b><br>Test class: org.tests.ModifyPolicyTests.US33_SearchUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US33_SearchUI@379614be</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI.verifyModifyBreadcrumbHighlightedAndNonClickable()'><b>verifyModifyBreadcrumbHighlightedAndNonClickable</b><br>Test class: org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI</td>
+<td></td>
+<td>5</td>
+<td>org.tests.ModifyPolicyTests.US28_ModifyPolicyBreadcrumUI@6f1c29b7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US31_PolicyNameUI.clickableValidation()'><b>clickableValidation</b><br>Test class: org.tests.ModifyPolicyTests.US31_PolicyNameUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US31_PolicyNameUI@a37aefe</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US50_SearchFunctionality.search()'><b>search</b><br>Test class: org.tests.ModifyPolicyTests.US50_SearchFunctionality</td>
+<td></td>
+<td>4</td>
+<td>org.tests.ModifyPolicyTests.US50_SearchFunctionality@492691d7</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US34_ResetUI.resetButtonPosition()'><b>resetButtonPosition</b><br>Test class: org.tests.ModifyPolicyTests.US34_ResetUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US34_ResetUI@45ac5f9b</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality.selectableOptions()'><b>selectableOptions</b><br>Test class: org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality</td>
+<td></td>
+<td>15</td>
+<td>org.tests.ModifyPolicyTests.US47_SubCategoryFunctionality@1f53a5dc</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US31_PolicyNameUI.defaultValue()'><b>defaultValue</b><br>Test class: org.tests.ModifyPolicyTests.US31_PolicyNameUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US31_PolicyNameUI@a37aefe</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US57_DeleteAction_Confirmation.testConfirmDeletesRecord()'><b>testConfirmDeletesRecord</b><br>Test class: org.tests.ModifyPolicyTests.US57_DeleteAction_Confirmation</td>
+<td></td>
+<td>1</td>
+<td>org.tests.ModifyPolicyTests.US57_DeleteAction_Confirmation@4b79ac84</td></tr>
+<tr>
+<td title='org.tests.ModifyPolicyTests.US41_DeleteActionUI.deleteActionEnabled()'><b>deleteActionEnabled</b><br>Test class: org.tests.ModifyPolicyTests.US41_DeleteActionUI</td>
+<td></td>
+<td>0</td>
+<td>org.tests.ModifyPolicyTests.US41_DeleteActionUI@3b8f0a79</td></tr>
+</table><p>
+</body>
+</html>
